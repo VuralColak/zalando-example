@@ -61,6 +61,8 @@ main {
             }
 
             .element2 {
+
+                margin-top: 8px;
                 .smallbox2 {
                     width: 75px;
                     border: solid 1px;
@@ -132,6 +134,10 @@ main {
 
             %mainhover-shared {
                     box-shadow: inset 0 0 0 2px #1a1a1a;
+            }
+
+            .form-button {
+                margin-top: 10px;
             }
 
 
