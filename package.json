@@ -1,0 +1,23 @@
+{
+  "name": "zalando-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "sass -w scss/style.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VuralColak/zalando-example.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VuralColak/zalando-example/issues"
+  },
+  "homepage": "https://github.com/VuralColak/zalando-example#readme",
+  "dependencies": {
+    "sass": "^1.52.3"
+  }
+}
