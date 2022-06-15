@@ -24,6 +24,7 @@ nav {
   display: grid;
   grid-template-columns: 3.5rem 1fr;
   width: 100%;
+  height: 48px;
   border-bottom: solid 1px #d0d1d3;
 }
 nav .log-reg {
@@ -63,14 +64,18 @@ nav .register:hover span {
   border-bottom: 2px solid;
 }
 nav .x {
+  width: 56px;
+  height: 48px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-right: solid 1px;
-  padding: 1rem;
+  border-right: solid 1px #d0d1d3;
   color: #1a1a1a;
   font-size: 1.5rem;
   cursor: pointer;
+}
+nav .x svg {
+  margin-bottom: 7px;
 }
 
 @media (min-width: 1024px) {
@@ -133,10 +138,11 @@ main .container form .element1 .smallbox1 label {
 }
 main .container form .element1 .bigbox1 {
   display: flex;
+  height: 44px;
   align-items: center;
   position: relative;
   box-shadow: inset 0 0 0 1px #1a1a1a;
-  padding: 10px;
+  padding: 12px;
 }
 main .container form .element1 .bigbox1 input {
   border: none;
@@ -167,10 +173,11 @@ main .container form .element2 .smallbox2 label {
 }
 main .container form .element2 .bigbox2 {
   display: flex;
+  height: 44px;
   align-items: center;
   position: relative;
   box-shadow: inset 0 0 0 1px #1a1a1a;
-  padding: 10px;
+  padding: 12px;
 }
 main .container form .element2 .bigbox2 input {
   border: none;
