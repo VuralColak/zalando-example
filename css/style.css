@@ -1,3 +1,430 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+html {
+  height: 100%;
+  font-family: HelveticaNow, Helvetica, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  font-family: HelveticaNow, Helvetica, sans-serif;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 3.5rem 1fr;
+  width: 100%;
+  border-bottom: solid 1px #d0d1d3;
+}
+nav .log-reg {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+nav .log-reg .login span {
+  font-weight: bold;
+}
+nav .log-reg .register span {
+  font-weight: 900;
+}
+nav .register, nav .login {
+  padding-right: 4px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: -0.16px;
+  line-height: 1.5rem;
+  cursor: pointer;
+}
+nav .login {
+  color: #1a1a1a;
+  cursor: unset;
+}
+nav .register {
+  color: #6328e0;
+}
+nav .register span {
+  padding: 3px;
+  padding-right: 5px;
+  padding-left: 0px;
+}
+nav .register:hover span {
+  border-bottom: 2px solid;
+}
+nav .x {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: solid 1px;
+  padding: 1rem;
+  color: #1a1a1a;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+@media (min-width: 1024px) {
+  nav {
+    display: none;
+  }
+}
+header div {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1216px;
+  padding: 16px 24px 24px 24px;
+}
+header div svg {
+  cursor: pointer;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  font-family: HelveticaNow, Helvetica, sans-serif;
+}
+
+main {
+  width: 100%;
+}
+main .container {
+  padding: 0px 24px;
+  margin: 0px auto;
+}
+main .container h3 {
+  font-weight: bolder;
+  color: #1a1a1a;
+  font-size: 1.75rem;
+  letter-spacing: -0.2px;
+  line-height: 1.75rem;
+}
+main .container form .element1 .smallbox1 {
+  width: 90px;
+  border: solid 1px;
+  border-bottom: none;
+  border-color: #1a1a1a;
+  display: flex;
+  justify-content: center;
+  padding: 3px;
+}
+main .container form .element1 .smallbox1 label {
+  font-size: 0.75rem;
+  letter-spacing: 0;
+  line-height: 1rem;
+  font-weight: 400;
+}
+main .container form .element1 .bigbox1 {
+  display: flex;
+  align-items: center;
+  position: relative;
+  box-shadow: inset 0 0 0 1px #1a1a1a;
+  padding: 10px;
+}
+main .container form .element1 .bigbox1 input {
+  border: none;
+  margin-left: 10px;
+  font-size: 1rem;
+  letter-spacing: -0.16px;
+  line-height: 1.5rem;
+}
+main .container form .element1 .bigbox1 .bigbox1-icon1 {
+  font-size: 1.5rem;
+  height: 1em;
+  width: 1em;
+}
+main .container form .element2 .smallbox2 {
+  width: 75px;
+  border: solid 1px;
+  border-bottom: none;
+  border-color: #1a1a1a;
+  display: flex;
+  justify-content: center;
+  padding: 3px;
+}
+main .container form .element2 .smallbox2 label {
+  font-size: 0.75rem;
+  letter-spacing: 0;
+  line-height: 1rem;
+  font-weight: 400;
+}
+main .container form .element2 .bigbox2 {
+  display: flex;
+  align-items: center;
+  position: relative;
+  box-shadow: inset 0 0 0 1px #1a1a1a;
+  padding: 10px;
+}
+main .container form .element2 .bigbox2 input {
+  border: none;
+  margin-left: 10px;
+  font-size: 1rem;
+  letter-spacing: -0.16px;
+  line-height: 1.5rem;
+}
+main .container form .element2 .bigbox2 .bigbox2-icon2 {
+  font-size: 1.5rem;
+  height: 1em;
+  width: 1em;
+}
+main .container form .element2 .bigbox2 .bigbox2-button1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 12px;
+}
+main .container form .element2 .bigbox2 .bigbox2-button1 button {
+  font-size: 1.5rem;
+  height: 1em;
+  width: 1em;
+  letter-spacing: 0;
+  line-height: 1.25rem;
+  font-weight: 400;
+  cursor: pointer;
+  background-color: #fff;
+  border: none;
+}
+main .container form .bigbox1:hover, main .container form .bigbox2:hover {
+  box-shadow: inset 0 0 0 2px #1a1a1a;
+}
+main .container form .form-button button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #1a1a1a;
+  color: #fff;
+  cursor: pointer;
+  padding: 12px;
+  border: none;
+}
+main .container form .form-button button span {
+  font-size: 1rem;
+  letter-spacing: -0.16px;
+  line-height: 1.5rem;
+  font-weight: 900;
+}
+main .container form .form-button button:hover {
+  background-color: #66676e;
+}
+main .container .forget-pass a {
+  text-decoration: none;
+  color: #6328e0;
+  cursor: pointer;
+}
+main .container .forget-pass a span {
+  font-size: 1rem;
+  letter-spacing: -0.16px;
+  line-height: 1.5rem;
+  font-weight: 700;
+}
+main .container .forget-pass a:hover {
+  border-bottom: 2px solid #6328e0;
+  padding-bottom: 1px;
+}
+
+@media (min-width: 320px) {
+  .register2, main .container {
+    max-width: 100%;
+  }
+}
+@media (min-width: 480px) {
+  .register2, main .container {
+    max-width: 75%;
+  }
+}
+@media (min-width: 768px) {
+  .register2, main .container {
+    max-width: 50%;
+  }
+}
+@media (min-width: 1024px) {
+  .register2, main .container {
+    max-width: 41.66%;
+  }
+}
+@media (min-width: 1280px) {
+  .register2, main .container {
+    max-width: 33.33%;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  font-family: HelveticaNow, Helvetica, sans-serif;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  margin: 36px 0;
+  background-color: #d0d1d3;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  font-family: HelveticaNow, Helvetica, sans-serif;
+}
+
+.register2 {
+  padding: 0px 24px;
+  margin: 0px auto;
+}
+.register2 .here {
+  font-weight: 600;
+  font-size: 1.75rem;
+  letter-spacing: -0.28px;
+  line-height: 2rem;
+  color: #1a1a1a;
+}
+.register2 .register-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  box-shadow: inset 0 0 0 2px #1a1a1a;
+  cursor: pointer;
+  padding: 12px;
+  color: #1a1a1a;
+  background-color: transparent;
+}
+.register2 .register-button button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  width: 100%;
+}
+.register2 .register-button button span {
+  font-size: 1rem;
+  letter-spacing: -0.16px;
+  line-height: 1.5rem;
+  font-weight: 900;
+}
+.register2 .register-button:hover {
+  background-color: #66676e;
+  box-shadow: none;
+}
+.register2 .register-button:hover span {
+  color: #fff;
+}
+
+@media (min-width: 320px) {
+  main .container, .register2 {
+    max-width: 100%;
+  }
+}
+@media (min-width: 480px) {
+  main .container, .register2 {
+    max-width: 75%;
+  }
+}
+@media (min-width: 768px) {
+  main .container, .register2 {
+    max-width: 50%;
+  }
+}
+@media (min-width: 1024px) {
+  main .container, .register2 {
+    max-width: 41.66%;
+  }
+}
+@media (min-width: 1280px) {
+  main .container, .register2 {
+    max-width: 33.33%;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  font-family: HelveticaNow, Helvetica, sans-serif;
+}
+
+footer {
+  padding: 24px;
+}
+footer ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+footer ul li:hover span {
+  border-bottom: 1px solid;
+}
+footer ul li {
+  padding: 16px;
+  list-style: none;
+}
+footer ul li a {
+  position: relative;
+  outline: none;
+  text-decoration: none;
+  color: #1a1a1a;
+  background-color: transparent;
+  cursor: pointer;
+}
+footer ul li a span {
+  font-size: 0.875rem;
+  letter-spacing: 0;
+  line-height: 1.25rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  padding: 2px;
+  padding-right: 15px;
+}
+footer .zalando-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 16px;
+  padding-bottom: 48px;
+}
+footer .zalando-logo a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  cursor: pointer;
+}
+footer .zalando-logo a svg {
+  color: #ff6900;
+  font-size: 1.5rem;
+  height: 1em;
+  transform: scale(1);
+  width: 1em;
+}
 
 /*# sourceMappingURL=style.css.map */

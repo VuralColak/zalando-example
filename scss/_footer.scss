@@ -1,0 +1,69 @@
+@use "global";
+
+footer {
+    padding: 24px;
+    
+    ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+
+        li:hover span {
+            border-bottom: 1px solid;
+            
+        }
+
+        li {
+            padding: 16px;
+            list-style: none;
+            
+            a {
+                position: relative;
+                outline: none;
+                text-decoration: none;
+                color: global.$login-color;
+                background-color: transparent;
+                cursor: pointer;
+                
+    
+                span {
+                    font-size: .875rem;
+                    letter-spacing: 0;
+                    line-height: 1.25rem;
+                    font-weight: 600;
+                    color: global.$login-color;
+                    padding: 2px;
+                    padding-right: 15px;
+                }
+            }
+        }
+
+    }
+
+    .zalando-logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 16px;
+        padding-bottom: 48px;
+
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: transparent;
+            cursor: pointer;
+
+            svg {
+                color: global.$icon-color;
+                font-size: 1.5rem;
+                height: 1em;
+                transform: scale(1);
+                width: 1em;
+            }
+        }
+    }
+
+    
+}

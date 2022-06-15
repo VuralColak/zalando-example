@@ -1,0 +1,204 @@
+@use "global";
+
+main {
+    width: 100%;
+
+    .container {
+
+        @extend %resposive-shared;
+        padding: 0px 24px;
+        margin: 0px auto;
+
+        h3 {
+            font-weight: bolder;
+            color: global.$login-color;
+            font-size: 1.75rem;
+            letter-spacing: -.2px;
+            line-height: 1.75rem;
+        }
+
+        form {
+            .element1 {
+                .smallbox1 {
+                    width: 90px;
+                    border: solid 1px;
+                    border-bottom: none;
+                    border-color: global.$login-color;
+                    display: flex;
+                    justify-content: center;
+                    padding: 3px;
+
+                    label {
+                        font-size: .75rem;
+                        letter-spacing: 0;
+                        line-height: 1rem;
+                        font-weight: 400;
+                    }
+                }
+
+                .bigbox1 {
+                    display: flex;
+                    align-items: center;
+                    position: relative;
+                    box-shadow: inset 0 0 0 1px #1a1a1a;
+                    padding: 10px;
+
+                    input {
+                        border: none;
+                        margin-left: 10px;
+                        font-size: 1rem;
+                        letter-spacing: -.16px;
+                        line-height: 1.5rem;
+                    }
+
+                    .bigbox1-icon1 {
+                        font-size: 1.5rem;
+                        height: 1em;
+                        width: 1em;
+                    }
+                }
+            }
+
+            .element2 {
+                .smallbox2 {
+                    width: 75px;
+                    border: solid 1px;
+                    border-bottom: none;
+                    border-color: global.$login-color;
+                    display: flex;
+                    justify-content: center;
+                    padding: 3px;
+
+                    label {
+                        font-size: .75rem;
+                        letter-spacing: 0;
+                        line-height: 1rem;
+                        font-weight: 400;
+                    }
+                }
+
+                .bigbox2 {
+                    display: flex;
+                    align-items: center;
+                    position: relative;
+                    box-shadow: inset 0 0 0 1px #1a1a1a;
+                    padding: 10px;
+
+                    input {
+                        border: none;
+                        margin-left: 10px;
+                        font-size: 1rem;
+                        letter-spacing: -.16px;
+                        line-height: 1.5rem;
+                    }
+
+                    .bigbox2-icon2 {
+                        font-size: 1.5rem;
+                        height: 1em;
+                        width: 1em;
+                    }
+
+                    .bigbox2-button1 {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        position: absolute;
+                        right: 12px;
+
+                        button {
+                            font-size: 1.5rem;
+                            height: 1em;
+                            width: 1em;
+                            letter-spacing: 0;
+                            line-height: 1.25rem;
+                            font-weight: 400;
+                            cursor: pointer;
+                            background-color: #fff;
+                            border: none;
+                        }
+                    }
+                }
+            }
+
+            .bigbox1:hover {
+                @extend %mainhover-shared
+            }
+
+            .bigbox2:hover {
+                @extend %mainhover-shared
+            }
+
+            %mainhover-shared {
+                    box-shadow: inset 0 0 0 2px #1a1a1a;
+            }
+
+
+            .form-button button {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                background-color: global.$login-color;
+                color: #fff;
+                cursor: pointer;
+                padding: 12px;
+                border: none;
+
+                span {
+                    font-size: 1rem;
+                    letter-spacing: -.16px;
+                    line-height: 1.5rem;
+                    font-weight: 900;
+                }
+            }
+
+            .form-button button:hover {
+                background-color: #66676e;
+            }
+        }
+
+        .forget-pass a {
+            text-decoration: none;
+            color: global.$secondary-color;
+            cursor: pointer;
+
+            span {
+                font-size: 1rem;
+                letter-spacing: -.16px;
+                line-height: 1.5rem;
+                font-weight: 700;
+            }
+        }
+
+        .forget-pass a:hover {
+            border-bottom: 2px solid global.$secondary-color;
+            padding-bottom: 1px;
+        }
+    }
+
+}
+
+@media (min-width:320px) {
+        %resposive-shared {
+        max-width: 100%;
+    }
+  }
+  @media (min-width:480px) {
+        %resposive-shared {
+        max-width: 75%;
+    }
+  }
+  @media (min-width:768px) {
+        %resposive-shared {
+        max-width: 50%;
+    }
+  }
+  @media (min-width:1024px) {
+        %resposive-shared {
+        max-width: 41.66%;
+    }
+  }
+  @media (min-width:1280px) {
+        %resposive-shared {
+        max-width: 33.33%;
+    }
+  }

@@ -1,0 +1,8 @@
+@use "global";
+
+.line {
+    width: 100%;
+    height: 1px;
+    margin: 36px 0;
+    background-color: global.$navborder-color;
+}
